@@ -9,3 +9,4 @@ This is a page about doggos and a party for dogs! This static comp was completed
 This page was built using basic HTML and CSS.
 
 # DogParty
+# DogParty

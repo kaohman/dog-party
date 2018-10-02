@@ -1,0 +1,90 @@
+h1, h2, p, button, table {
+  font-family: "ABeeZee", serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.pageHeader {
+  background-color: #92E0E5;
+  padding: 15px 0;
+}
+
+.dogIcon {
+  float: left;
+  height: 35px;
+  margin-left: 25px;
+  margin-top: -4px;
+}
+
+table {
+  font-size: 20px;
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+td {
+  padding: 0 15px;
+}
+
+p {
+  font-size: 17.5px;
+  padding: 0 15px;
+}
+
+td, .footer, a {
+  color: white;
+}
+
+.headDog {
+  padding: 20px 0 10px 0;
+  background-image: url("images/park.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.dogFacts {
+  height: 550px;
+  width: 1200px;
+  margin: 20px auto;
+}
+
+.leftDog, .middleDog, .rightDog {
+  width: 400px;
+  float: left;
+}
+
+button {
+  color: #3F8DA7;
+  font-size: 18px;
+  border: 4px solid #3F8DA7;
+  padding: 3px 8px;
+  margin: 20px auto;
+  background-color: white;
+}
+
+.dogImg {
+  border: 2px solid #3F8DA7;
+  border-radius: 100%;
+  width: 200px;
+  margin: 20px 0;
+}
+
+.headDogImg {
+  border: 4px solid #3F8DA7;
+  border-radius: 100%;
+  margin: 20px 0 0 0;
+}
+
+.footer {
+  background-color: #3F8DA7;
+  padding: 5px 0;
+}
+
+.footerImg {
+  margin: 35px 25px;
+}
+
