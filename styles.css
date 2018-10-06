@@ -1,90 +1,147 @@
-h1, h2, p, button, table {
+/*broad styles*/
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
   font-family: "ABeeZee", serif;
   text-align: center;
 }
 
-h2 {
-  font-size: 20px;
+body {
+  /*weird 8px margin in user agent stylesheet*/
+  margin: 0;
 }
 
-.pageHeader {
+
+/*header styles*/
+header {
   background-color: #92E0E5;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
-.dogIcon {
+.dog-icon {
   float: left;
   height: 35px;
   margin-left: 25px;
-  margin-top: -4px;
 }
 
-table {
-  font-size: 20px;
-  margin-right: 25px;
-  margin-left: auto;
+.head-table {
+  color: white;
+  float: right;
+  font-size: 18px;
+  margin: 5px 25px 5px auto;
+  overflow: auto;
 }
 
-td {
+.head-td:hover {
+  color: grey;
+}
+
+.clear-fix:after {
+  content: ' ';
+  clear: both;
+  display: table;
+}
+
+.head-td {
   padding: 0 15px;
+}
+
+
+/*main content styles*/
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+  overflow: wrap;
+}
+
+h2 {
+  font-size: 18px;
 }
 
 p {
-  font-size: 17.5px;
+  font-size: 16.5px;
   padding: 0 15px;
 }
 
-td, .footer, a {
-  color: white;
-}
-
-.headDog {
-  padding: 20px 0 10px 0;
+.head-dog {
   background-image: url("images/park.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  padding: 20px 0 30px 0;
   width: 100%;
 }
 
-.dogFacts {
-  height: 550px;
-  width: 1200px;
+.head-dog-img {
+  border: 4px solid #3F8DA7;
+  border-radius: 100%;
+  display: block;
+  margin: 5px auto;
+}
+
+/*causes scroll bar for main content when screen size is reduced*/
+.dog-facts {
+  overflow: auto;
+}
+
+.facts-table {
   margin: 20px auto;
 }
 
-.leftDog, .middleDog, .rightDog {
-  width: 400px;
-  float: left;
+.facts-td {
+  min-width: 380px;
+  max-width: 380px;
+}
+
+.dog-img {
+  border: 2px solid #3F8DA7;
+  border-radius: 100%;
+  margin: 10px 0;
+  width: 200px;
 }
 
 button {
+  background-color: white;
+  border: 4px solid #3F8DA7;
   color: #3F8DA7;
   font-size: 18px;
-  border: 4px solid #3F8DA7;
+  margin: 10px auto;
   padding: 3px 8px;
-  margin: 20px auto;
-  background-color: white;
 }
 
-.dogImg {
-  border: 2px solid #3F8DA7;
-  border-radius: 100%;
-  width: 200px;
-  margin: 20px 0;
+button:hover {
+  background-color: lightgrey;
 }
 
-.headDogImg {
-  border: 4px solid #3F8DA7;
-  border-radius: 100%;
-  margin: 20px 0 0 0;
+
+/*footer styles*/
+footer,
+a {
+  color: white;
 }
 
-.footer {
+footer {
   background-color: #3F8DA7;
   padding: 5px 0;
 }
 
-.footerImg {
-  margin: 35px 25px;
+.footer-img {
+  margin: 20px 25px;
 }
 
+
+/*media query for smaller screens*/
+@media(max-width: 400px) {
+  .dog-icon,
+  .head-table {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .head-td {
+    display: table-row;
+  }
+
+  .footer-img {
+    width: 30px;
+  }
+}
