@@ -7,5 +7,5 @@ This is a page about doggos and a party for dogs! This static comp was completed
 ## Built With
 This page was built using basic HTML and CSS.
 
-# Authors
+## Authors
 *Karin Ohman - 10/06/2018*
